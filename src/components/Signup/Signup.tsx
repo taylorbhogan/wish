@@ -1,7 +1,9 @@
+import Input from "../AppUtils/Input";
+
 const Signup = () => {
   return (
     <div>
-      Signup
+      <Input />
     </div>
   )
 }
