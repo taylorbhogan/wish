@@ -1,0 +1,12 @@
+:root{
+  --yellow300: #fff176;
+  --yellow600: #fdd835;
+  --yellow900: #f57f16;
+  --blue200: #8a9bee;
+  --blue400: #2c57d2;
+  --blue900: #000989;
+}
+
+html{
+  background-color: var(--yellow300);
+}
