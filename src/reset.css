@@ -18,7 +18,7 @@ This reset file was inspired and influenced by the following minds:
 
 /* Height cheat code! Allow percentage-based heights in the application, cf. default height based on children. */
 html,
-/* #root,    for React apps */
+#root,
 body{
   height: 100%;
 }

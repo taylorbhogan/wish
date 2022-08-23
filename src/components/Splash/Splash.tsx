@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom"
+import NavLink from "../AppUtils/NavLink"
+import styles from './Splash.module.css'
 
 export default function Splash() {
   return (
-    <div>
-      <Link to='/login'>Log In</Link>
-      <Link to='/signup'>Sign Up</Link>
+    <div className={styles.container}>
+      <NavLink to="/login" text="Log In" />
+      <NavLink to="/signup" text="Sign Up" />
     </div>
   )
 }
