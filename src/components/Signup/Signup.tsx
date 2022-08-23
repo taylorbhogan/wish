@@ -18,7 +18,7 @@ const Signup = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h1>Let's get you signed up.</h1>
         <Input

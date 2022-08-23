@@ -15,7 +15,7 @@ export default function Login() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h1>Welcome back.</h1>
         <Input

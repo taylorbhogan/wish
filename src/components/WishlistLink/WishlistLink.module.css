@@ -1,0 +1,13 @@
+.container{
+  background-color: var(--blue900);
+  padding: 1rem;
+}
+
+.container h1{
+  color: white;
+}
+
+.container p {
+  background-color: var(--yellow600);
+  padding: .75rem;
+}
