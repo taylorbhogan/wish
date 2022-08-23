@@ -1,11 +1,12 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom'
 import Signup from './components/Signup';
 
 function App() {
   return (
-    <div className="App">
-      <Signup />
-    </div>
+    <Routes>
+      <Route path='/' element={<Signup />}></Route>
+    </Routes>
   );
 }
 
