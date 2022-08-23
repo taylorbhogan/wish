@@ -1,0 +1,6 @@
+.input{
+  line-height: 3;
+  padding-left: 8px;
+  border-radius: var(--borderRadius2);
+  border: none;
+}

@@ -1,6 +1,8 @@
 import Input from "../AppUtils/Input";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ButtonSubmit from "../AppUtils/ButtonSubmit";
+import styles from "./Login.module.css"
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -12,8 +14,9 @@ export default function Login() {
   };
 
   return (
-    <>
-      <form>
+    <div className={styles.container}>
+      <form className={styles.form}>
+        <h1>Welcome back.</h1>
         <Input
           placeholder="email"
           value={email}
@@ -28,8 +31,9 @@ export default function Login() {
             setPassword(e.target.value)
           }
         />
-        <ButtonSubmit text={"ButtonSubmit"} />
+        <ButtonSubmit text={"LOG IN"} />
+        <p>Need an account? <Link className={styles.link} to="/signup">Sign up.</Link></p>
       </form>
-    </>
+    </div>
   );
 }
