@@ -12,8 +12,14 @@
 
   --transition: all 200ms ease;
   --transition2: all 400ms ease;
+
+  --appWidth: 500px;
 }
 
 html{
   background-color: var(--yellow300);
+}
+
+h1{
+  font-weight: 800;
 }

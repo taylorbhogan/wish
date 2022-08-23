@@ -14,7 +14,7 @@
   gap: 1.5rem;
   background-color: var(--blue200);
   width: 100%;
-  max-width: 500px;
+  max-width: var(--appWidth);
   border-radius: var(--borderRadius1);
 }
 
