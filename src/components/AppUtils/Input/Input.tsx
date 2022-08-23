@@ -1,9 +1,19 @@
 type InputProps = {
-  type?: "text",
-}
+  placeholder: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
 
-export default function Input(props: InputProps) {
+const Input = ({ value, onChange, placeholder }: InputProps): JSX.Element => {
   return (
-    <div>Input</div>
-  )
-}
+    <input
+      type="text"
+      placeholder={placeholder}
+      aria-label={placeholder}
+      value={value}
+      onChange={onChange}
+    />
+  );
+};
+
+export default Input;
