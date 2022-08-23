@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Input from "../AppUtils/Input";
 import ButtonSubmit from "../AppUtils/ButtonSubmit";
 import styles from "./Signup.module.css";
@@ -58,6 +59,7 @@ const Signup = () => {
           />
         )}
         <ButtonSubmit text={"SIGN UP"} />
+        <p>Already have an account? <Link className={styles.link} to="/login">Log in.</Link></p>
       </form>
     </div>
   );

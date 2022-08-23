@@ -21,3 +21,19 @@
 .form h1 {
   color: white;
 }
+
+.form p {
+  text-align: center;
+  color: white;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+  border-bottom: 1.5px solid transparent;
+}
+
+.link:hover{
+  border-bottom: 1.5px solid white;
+}
