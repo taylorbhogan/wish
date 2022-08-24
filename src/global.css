@@ -5,8 +5,21 @@
   --blue200: #8a9bee;
   --blue400: #2c57d2;
   --blue900: #000989;
+
+  --borderRadius1: .5rem;
+  --borderRadius2: .25rem;
+  --borderRadius3: 2rem;
+
+  --transition: all 200ms ease;
+  --transition2: all 400ms ease;
+
+  --appWidth: 500px;
 }
 
 html{
   background-color: var(--yellow300);
+}
+
+h1, h2{
+  font-weight: 800;
 }

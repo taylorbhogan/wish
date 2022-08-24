@@ -1,9 +1,22 @@
-type InputProps = {
-  type?: "text",
-}
+import styles from "./Input.module.css"
 
-export default function Input(props: InputProps) {
+type InputProps = {
+  placeholder: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const Input = ({ value, onChange, placeholder }: InputProps): JSX.Element => {
   return (
-    <div>Input</div>
-  )
-}
+    <input
+      type="text"
+      className={styles.input}
+      placeholder={placeholder}
+      aria-label={placeholder}
+      value={value}
+      onChange={onChange}
+    />
+  );
+};
+
+export default Input;

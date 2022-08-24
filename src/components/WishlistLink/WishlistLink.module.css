@@ -1,0 +1,21 @@
+.container{
+  padding: 1rem 1.3rem;
+  border-radius: var(--borderRadius1);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.container:hover{
+  transform: scale(1.01);
+}
+.container h1{
+  color: white;
+}
+
+.container p {
+  margin-top: 1rem;
+  background-color: var(--yellow600);
+  padding: .75rem;
+  border-radius: var(--borderRadius2);
+  font-weight: 800;
+  color: black;
+}
