@@ -1,8 +1,8 @@
 .button{
   border: none;
   border-radius: var(--borderRadius2);
-  background-color: var(--blue400);
-  color: white;
+  background-color: var(--blue900);
+  color: var(--yellow600);
   font-weight: 600;
   line-height: 2.3;
   cursor: pointer;
@@ -10,6 +10,6 @@
 }
 
 .button:hover{
-  background-color: var(--blue900);
+  background-color: var(--blue400);
 
 }

@@ -1,0 +1,31 @@
+.form {
+  background-color: var(--yellow600);
+  border-radius: var(--borderRadius2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.form a {
+  color: black;
+  border: 1px solid black;
+  padding: .5rem 1rem;
+  display: block;
+  border-radius: var(--borderRadius2);
+  text-decoration: none;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info *:nth-child(1) {
+  flex-grow: 2;
+}
+
+.info *:nth-child(2) {
+  flex-grow: 1;
+}

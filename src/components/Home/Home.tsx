@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import WishlistLink from "../WishlistLink";
 import styles from "./Home.module.css";
 const wishlists = [
@@ -21,6 +22,28 @@ type Wishlist = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    const fetchWishlists = async () => {
+
+      try {
+        const res = await fetch("i")
+
+        if (!res.ok) throw res;
+        console.log("res",res);
+
+        const data = await res.json();
+        console.log("data",data);
+
+
+      } catch (e) {
+        console.log("error",e);
+
+      }
+
+    };
+    fetchWishlists()
+  },[]);
+
   return (
     <div className={styles.wrapper}>
       <WishlistLink id={"jd"} isMine={true} />

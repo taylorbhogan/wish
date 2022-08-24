@@ -10,7 +10,7 @@ type WishlistLinkProps = {
 const WishlistLink = ({ name, id, isMine }: WishlistLinkProps): JSX.Element => {
   return (
     <Link
-      to={`/${id}`}
+      to={`/wishlists/${id}`}
       style={
         isMine
           ? { backgroundColor: "var(--blue200)" }
